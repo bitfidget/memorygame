@@ -63,7 +63,10 @@ var testMatch = function(card1, card2){
 
 // this is called when all letters are matched
 var endGame = function(){
-  $('body').css('background', 'url(http://mediad.publicbroadcasting.net/p/kcur/files/201307/fireworks.jpg)');
+  $('body').css({
+    background: 'url(http://mediad.publicbroadcasting.net/p/kcur/files/201307/fireworks.jpg) no-repeat',
+    'background-size': 'cover'
+  });
   alert('well done you finished in ' + counter + 'seconds!');
 }
 
